@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{sys}
+
+\PYG{k}{def} \PYG{n+nf}{isPrime}\PYG{p}{(}\PYG{n}{n}\PYG{p}{):}
+	\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{n}\PYG{o}{/}\PYG{l+m+mi}{2} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{):}
+		\PYG{k}{if} \PYG{n}{n} \PYG{o}{\PYGZpc{}} \PYG{n}{i} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{:}
+			\PYG{k}{return} \PYG{k+kc}{False}
+	\PYG{k}{else}\PYG{p}{:}
+		\PYG{k}{return} \PYG{k+kc}{True}
+
+\PYG{n}{n} \PYG{o}{=} \PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{sys}\PYG{o}{.}\PYG{n}{argv}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{])}
+\PYG{n}{output} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+si}{\PYGZob{}0\PYGZcb{}}\PYG{l+s+s1}{ : }\PYG{l+s+si}{\PYGZob{}1\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{n}\PYG{p}{,} \PYG{n}{isPrime}\PYG{p}{(}\PYG{n}{n}\PYG{p}{))}
+
+\PYG{n+nb}{print} \PYG{n}{output}
+
+\end{Verbatim}

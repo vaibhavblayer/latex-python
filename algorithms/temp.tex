@@ -1,0 +1,24 @@
+\begin{center}
+\texttt{ modeling polynomial - only addition}
+\end{center}
+\begin{minted}[tabsize=4]{python}
+class Polynomial:
+	def __init__(self, *coeffs):
+		self.coeffs = coeffs
+
+	def __repr__(self):
+		return 'Polynomial{}'.format(self.coeffs)
+
+	def __add__(self, other):
+		return Polynomial(*(x+y for x, y in zip(self.coeffs, other.coeffs)))
+\end{minted}
+\begin{center}
+\texttt{Output}
+\end{center}
+\begin{itemize}
+\item[\$] python -i polynomial.py
+\item[\>] p = Polynomial(3, 5, 2) \# $3x^2 + 5x + 2$
+\item[\>] q = Polynomial(7, 2, 3) \# $7x^2 + 2x + 3$
+\item[\>] p + q
+\item Polynomial(10, 7, 5) \# $10x^2 + 7x + 5$
+\end{itemize}

@@ -1,0 +1,19 @@
+ 2803  awk -f ~/awk-scripts/writeTexTitle ~/python/recursion/factorial.py >> factorial.tex
+ 2834  awk -f ~/awk-scripts/writeTexBody ~/python/recursion/factorial.py >> factorial.tex
+ 2839  python ~/python/recursion/factorial.py 5 | awk -f ~/awk-scripts/output >> factorial.tex
+ 2896  which sed
+ 2897  which awk
+ 2904  sed 's/[#]/*/' factorial.py
+ 2907  sed 's/[#]//' factorial.py
+ 2908  cat factorial.py
+ 2909  sed 's/[#]//' factorial.py > factorial.py
+ 2916  sed 's/[#]/*/' factorial.py
+ 2917  sed 's/[#]//' factorial.py
+ 2985  for ((i=0; i<10; i++)){\ntouch $i.txt\n}
+ 2995  for ((i=0; i<100; i++)){\npython recursion/factorial.py $i\n}
+ 2998  for ((i=0; i<36; i++)){\npython recursion/factorial.py $i\n} >> factorial.txt
+ 2999  ls
+ 3002  awk '{ print "$" $0 "$"}' factorial.txt>> factorial.tex
+ 3005  awk '{ print "$" $0 "$" "\n"}' factorial.txt>> factorial.tex
+ 3015  awk '{ print "\\item " "$" $0 "$" "\n"}' factorial.txt>> factorial.tex
+ 3020  awk '{ print "\\item " "$" $0 "$" "\n"}' factorial.txt

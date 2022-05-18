@@ -1,0 +1,26 @@
+\begin{center}
+ \texttt{
+ recursive algorithm for factorial
+} 
+ \end{center}
+\begin{minted}[tabsize=4]{python}
+import sys
+
+def factorial(n):
+		if n == 0:
+			return 1
+		else:
+			return n * factorial(n-1)
+
+n = int(sys.argv[1])
+output = '{0}! = {1}'.format(n, factorial(n))
+
+print(output)
+\end{minted}
+\begin{center}
+\texttt{Output}
+\end{center}
+\begin{itemize}
+\item[\$] \texttt{ python factorial.py 5}
+\item\texttt{ 5! = 120 }
+\end{itemize}

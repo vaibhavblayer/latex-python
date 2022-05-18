@@ -1,0 +1,22 @@
+\begin{center}
+\texttt{ hello this is a title text}
+\end{center}
+\begin{minted}[tabsize=4]{python}
+
+import sys
+
+def title(n):
+	return n**2
+
+n = int(sys.argv[1])
+
+print '{0} **2= {1}'.format(n, title(n))
+\end{minted}
+
+\begin{center}
+\texttt{Output}
+\end{center}
+\begin{itemize}
+\item[\$]\texttt{ python file.py 7}
+\item\texttt{$7^2 = 49$}
+\end{itemize}
